@@ -70,7 +70,7 @@ export function Hero() {
         <div className="relative mx-auto hidden w-full max-w-md lg:block">
           <div className="animate-float-slow">
             <Image
-              src="/hero-illustration.png"
+              src="/hero-illustration.svg"
               alt="Illustration of an AI robot head representing full-stack and AI development"
               width={520}
               height={520}
