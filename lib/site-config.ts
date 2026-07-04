@@ -9,6 +9,7 @@ export const siteConfig = {
     github: 'https://github.com/pranvxag',
     linkedin: 'https://linkedin.com/in/pranvxag',
     email: 'mailto:pranvxag@gmail.com',
+    whatsapp: 'https://wa.me/91XXXXXXXXXX',
   },
   hero: {
     greeting: "Hey there!, I'm-",
