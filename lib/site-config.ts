@@ -4,7 +4,7 @@ export const siteConfig = {
   role: 'CS Student & Developer',
   location: 'Pune, Maharashtra, India',
   email: 'pranvxag@gmail.com',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: 'https://drive.google.com/file/d/1R1y85AfW98xLHqJtW_Gx84moxpKc0tjH/view?usp=drive_link',
   socials: {
     github: 'https://github.com/pranvxag',
     linkedin: 'https://linkedin.com/in/pranvxag',
