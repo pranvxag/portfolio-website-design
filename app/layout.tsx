@@ -16,10 +16,10 @@ const logoScript = Pacifico({
 })
 
 export const metadata: Metadata = {
-  title: 'Pranav Agale — CS Student & Developer',
+  title: 'Pranav Agale',
   description:
     'Personal portfolio of Pranav Agale, a Computer Science Engineering student and full-stack & AI developer building web, mobile, and data-driven applications.',
-  generator: 'v0.app',
+  generator: 'self',
   icons: {
     icon: [
       {
