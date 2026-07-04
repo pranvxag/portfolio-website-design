@@ -9,7 +9,7 @@ export const siteConfig = {
     github: 'https://github.com/pranvxag',
     linkedin: 'https://linkedin.com/in/pranvxag',
     email: 'mailto:pranvxag@gmail.com',
-    whatsapp: 'https://wa.me/91XXXXXXXXXX',
+    whatsapp: 'https://wa.me/918010561437',
   },
   hero: {
     greeting: "Hey there!, I'm-",
@@ -18,7 +18,7 @@ export const siteConfig = {
       'a Computer Science Engineering student who loves building full-stack, mobile, and AI-driven applications.',
     status: [
       'Open to internships and collaborations.',
-      'Currently exploring Full-Stack & AI development.',
+      'Currently exploring Open Source & AI development.',
     ],
   },
   about: {
@@ -73,8 +73,9 @@ export const skillCategories: SkillCategory[] = [
 ]
 
 export const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#contact", label: "Contact" },
 ]

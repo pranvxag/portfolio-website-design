@@ -1,13 +1,6 @@
 import { Mail } from 'lucide-react'
-import Link from 'next/link'
-import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { siteConfig } from '@/lib/site-config'
-
-const socialItems = [
-  { label: 'GitHub', href: siteConfig.socials.github, icon: GithubIcon },
-  { label: 'LinkedIn', href: siteConfig.socials.linkedin, icon: LinkedinIcon },
-  { label: 'Email', href: siteConfig.socials.email, icon: Mail },
-]
+import { SocialLinks } from '@/components/social-links'
 
 export function Footer() {
   return (
@@ -20,6 +13,7 @@ export function Footer() {
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             Let&apos;s build something together
           </h2>
+
           <p className="mt-3 text-pretty text-muted-foreground">
             Have an idea, an opportunity, or just want to say hi? My inbox is
             always open.
@@ -34,30 +28,15 @@ export function Footer() {
           {siteConfig.email}
         </a>
 
-        <div className="flex items-center gap-3">
-          {socialItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={item.label}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground transition-colors hover:border-accent/50 hover:text-foreground"
-            >
-              <item.icon className="h-4 w-4" />
-            </Link>
-          ))}
-        </div>
+        <SocialLinks />
 
         <p className="mt-4 text-sm text-muted-foreground">
           <span className="font-logo text-lg text-foreground">
             {siteConfig.logo}
           </span>{' '}
-          &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
-          reserved.
+          © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </p>
       </div>
     </footer>
   )
 }
-

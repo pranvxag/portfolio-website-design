@@ -7,7 +7,7 @@ import {
   Link,
   MessageCircle,
 } from 'lucide-react'
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { SocialLinks } from '@/components/social-links'
 import Image from 'next/image'
 import { buttonVariants } from '@/components/ui/button'
 import { siteConfig } from '@/lib/site-config'
@@ -75,37 +75,9 @@ export function Hero() {
               Resume
             </a>
           </div>
-           <div className="mt-8 flex items-center gap-4">
-  <a
-    href={siteConfig.socials.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="GitHub"
-    className="group flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-foreground hover:shadow-lg"
-  >
-    <FaGithub className="h-5 w-5 text-muted-foreground transition-colors duration-300 group-hover:text-foreground" />
-  </a>
-
-  <a
-    href={siteConfig.socials.linkedin}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    className="group flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-[#0A66C2] hover:shadow-lg"
-  >
-    <FaLinkedin className="h-5 w-5 text-muted-foreground transition-colors duration-300 group-hover:text-[#0A66C2]" />
-  </a>
-
-  <a
-    href={siteConfig.socials.whatsapp}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="WhatsApp"
-    className="group flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:border-[#25D366] hover:shadow-lg"
-  >
-    <FaWhatsapp className="h-5 w-5 text-muted-foreground transition-colors duration-300 group-hover:text-[#25D366]" />
-  </a>
-</div>
+          <div className="mt-8">
+            <SocialLinks />
+            </div>
         </div>
 
         <div className="relative mx-auto hidden w-full max-w-md lg:block">
